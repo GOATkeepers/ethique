@@ -28,26 +28,6 @@ module.exports = {
       port: 8545,
       network_id: '*' // Match any network id
     },
-    schoolboyq: {
-      // type="quorum",
-      provider: new HDWalletProvider(mnemonic, "http://142.93.22.253:22000"),
-      gasPrice: 0,
-      network_id: '*' // Match any network id
-    },
-    azorius: {
-      // provider: new HDWalletProvider(mnemonic, 'https://spectronode01.blockchain.azure.com:3200/Pe_pwBVf2CYmPK8vpvjvBGWP'),
-      host: 'https://spectronode01.blockchain.azure.com', //:3200/Pe_pwBVf2CYmPK8vpvjvBGWP',
-      port: 3200,
-      from: '0x0810A0E7A850d0eC9a3A1738D35613F52B9399b0',
-      gasPrice: 0,
-      network_id: '*' // Match any network id
-    },
-    skale: {
-      // provider: new PrivateKeyProvider(privateKey, "http://104.248.242.64:8003"),
-      provider: new HDWalletProvider(mnemonic, "http://104.248.242.64:8003"),
-      gasPrice: 0,
-      network_id: '*' // Match any network id
-    },
     rinkeby: {
       // must be a thunk, otherwise truffle commands may hang in CI
       provider: () =>
