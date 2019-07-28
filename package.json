@@ -1,0 +1,84 @@
+{
+  "name": "ETHique",
+  "version": "0.0.1",
+  "description": "A dapp built to showcase metatransactions",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "postbuild": "[ ! -f ./dist/_redirects ] && cp _redirects ./dist/_redirects || exit 0",
+    "dev": "node scripts/dev-server.js",
+    "start": "npm run dev",
+    "build": "node scripts/build.js",
+    "cli": "ganache-cli",
+    "test": "truffle test",
+    "lint": "eslint --ext .js,.vue --ignore-path .eslintignore .",
+    "lintfix": "eslint --fix --ext .js,.vue --ignore-path .eslintignore ."
+  },
+  "keywords": [
+    "Ethereum",
+    "Vue",
+    "blockchain",
+    "Twitter",
+    "Cryptoeconomics"
+  ],
+  "author": "@bradleyc, @gabeibarra",
+  "license": "Apache",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "bootstrap": "^4.3.1",
+    "bootstrap-vue": "^2.0.0-rc.26",
+    "vue": "2.6.10",
+    "vue-animejs": "^2.0.0",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-transform-runtime": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "@babel/runtime": "^7.4.2",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.5",
+    "connect-history-api-fallback": "^1.6.0",
+    "copy-webpack-plugin": "^5.0.2",
+    "css-loader": "^2.1.1",
+    "dotenv": "^7.0.0",
+    "eslint": "^5.15.3",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-vue": "^5.2.2",
+    "eventsource-polyfill": "^0.9.6",
+    "express": "^4.16.4",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "html-webpack-plugin": "^3.2.0",
+    "http-proxy-middleware": "^0.19.1",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "sass-loader": "^7.1.0",
+    "truffle-hdwallet-provider": "^1.0.6",
+    "uglifyjs-webpack-plugin": "^2.1.2",
+    "url-loader": "^1.1.2",
+    "vue-loader": "^15.7.0",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-middleware": "^3.6.1",
+    "webpack-hot-middleware": "^2.24.3",
+    "webpack-merge": "^4.2.1"
+  },
+  "engines": {
+    "node": ">= 8.11.3",
+    "npm": ">= 5.6.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}

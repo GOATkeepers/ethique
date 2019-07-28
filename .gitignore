@@ -1,0 +1,9 @@
+haters/
+.env
+.git
+*.log
+.editorconfig
+dist
+node_modules
+build
+.DS_Store
